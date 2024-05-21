@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tricks</title>
+    <style>
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Center content horizontally and vertically */
+        }
+        .placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <p>Centered Content</p>
+    </div>
+
+    <div class="center">
+        <img src="actual-image.jpg" alt="Description" onerror="this.src='placeholder.jpg';" width="300" height="200">
+    </div>
+
+    <div class="center">
+        <input type="text" placeholder="Autofocus on load" autofocus>
+    </div>
+
+    <div style="text-align: center; margin: 20px;">
+        <a href="#section">Go to Section</a>
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+    <div id="section" class="center">
+        <div class="placeholder">Section</div>
+    </div>
+
+</body>
+</html>
